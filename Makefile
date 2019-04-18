@@ -30,11 +30,11 @@ build:
 
 ifeq ($(shell uname),Darwin)
 	cd $(BUILD_DIRECTORY); \
-	cmake -D__USE_MISC -DCMAKE_BUILD_TYPE=Release -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ ..; \
+	cmake -DCMAKE_BUILD_TYPE=Release -DOPENSSL_ROOT_DIR=/usr/local/opt/openssl/ ..; \
 	make -j$(JOBS) VERBOSE=$(VERBOSE)
 else
 	cd $(BUILD_DIRECTORY); \
-	cmake -D__USE_MISC -DCMAKE_BUILD_TYPE=Release ..; \
+	cmake -DCMAKE_BUILD_TYPE=Release ..; \
 	make -j$(JOBS) VERBOSE=$(VERBOSE)
 endif
 
