@@ -20,5 +20,5 @@ erl_crash.dump
 *.ez
 
 # tdlib-json-cli binary
-priv/tdlib-json-cli
-priv/types.json
+#priv/tdlib-json-cli
+#priv/types.json
