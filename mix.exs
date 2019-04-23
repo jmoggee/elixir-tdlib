@@ -7,7 +7,7 @@ defmodule TDLib.Mixfile do
       version: "0.0.2",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      compilers: [:elixir_make] ++ Mix.compilers,
+      # compilers: [:elixir_make] ++ Mix.compilers,
       deps: deps(),
 
       # Hex
